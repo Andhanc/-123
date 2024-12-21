@@ -61,7 +61,67 @@
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script>
+        const container = document.getElementById('container');
+const registerBtn = document.getElementById('register');
+const loginBtn = document.getElementById('login');
+
+let reference = '' 
+
+registerBtn.addEventListener('click', () => {
+    container.classList.add("active");
+});
+
+loginBtn.addEventListener('click', () => {
+    container.classList.remove("active");
+});
+
+document.addEventListener('DOMContentLoaded' , (e) => {
+    const wb = document.getElementById('wb')
+    wb.addEventListener('click', () => {
+        reference = 'https://www.wildberries.ru/lk'
+    })
+})
+
+document.addEventListener('DOMContentLoaded' , (e) => {
+    const ozon = document.getElementById('ozon')
+    ozon.addEventListener('click', () => {
+    reference = 'https://www.ozon.ru/my/main/'
+    })
+})
+
+document.addEventListener('DOMContentLoaded' , (e) => {
+    const ebay = document.getElementById('ebay')
+    ebay.addEventListener('click', () => {
+        reference = 'https://signin.ebay.de/ws/eBayISAPI.dll?SignIn&ru=https%3A%2F%2Fwww.ebay.de%2Fmys%2Fhome%3Fsource%3DGBH&sgfl=sm&smuid=01ac4e51c37b42a58d4a78a1691fcf9c'
+    })
+})
+
+document.addEventListener('DOMContentLoaded' , (e) => {
+    const lamoda = document.getElementById('lamoda')
+    lamoda.addEventListener('click', () => {
+        reference = 'https://www.lamoda.by/?utm_medium=cpc&utm_source=google&utm_campaign=BY_SEMB_WEB_Lamoda%20minsk&utm_content=153865765848&utm_term=lamoda&gad_source=1&gclid=CjwKCAiA65m7BhAwEiwAAgu4JAJMJPBbaAsYxWRjKg8TvjokXm1QDZdftt3D7h56WYEh8w0s3RDuMhoCw_gQAvD_BwE'
+    })
+})
+
+function openLogin() {
+    window.open(reference);
+}
+
+function toggleActive(img) {
+    img.classList.toggle('active');
+}
+
+document.getElementById("importButton").onclick = function() {
+    window.open("kabinet.html", "_blank");}
+
+    document.getElementById("register").onclick = function() {
+        document.getElementById("productTable").style.display = "table";
+    }
+    document.getElementById("back").onclick = function() {
+        window.open("index.html");
+    };
+    </script>
 </body>
 
 </html>
