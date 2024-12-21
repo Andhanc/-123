@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Modern Login Page | AsmrProg</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="about.html">О нас</a>
+            <a href="import.html">Importo</a>
+            <a href="#instructions">Инструкция</a>
+            <a href="kabinet.html">Вход/Регистрация</a>
+        </nav>
+    </header>
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form>
+                <h1>Куда импортируем?...</h1>
+                <div class="image-container">
+                    <img src="D:/BiTry/Альфа банк/img/wb.png" alt="WB" onclick="toggleActive(this)">
+                    <img src="D:/BiTry/Альфа банк/img/ozon.jpg" alt="Ozon" onclick="toggleActive(this)">
+                    <img src="D:/BiTry/Альфа банк/img/ebay1.png" alt="Ebay" onclick="toggleActive(this)">
+                    <img src="D:/BiTry/Альфа банк/img/lamoda.png" alt="Lamoda" onclick="toggleActive(this)">
+                </div> один или несколько маркетплейсов для импорта ваших товаров</span>
+                <button id="importButton">Импортировать</button>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form>
+                <h1>Выберите маркетплейс!</h1>
+                <div class="image-container">
+                    <img src="D:/BiTry/Альфа банк/img/wb.png" alt="WB" onclick="toggleActive(this)">
+                    <img src="D:/BiTry/Альфа банк/img/ozon.jpg" alt="Ozon" onclick="toggleActive(this)">
+                    <img src="D:/BiTry/Альфа банк/img/ebay1.png" alt="Ebay" onclick="toggleActive(this)">
+                    <img src="D:/BiTry/Альфа банк/img/lamoda.png" alt="Lamoda" onclick="toggleActive(this)">
+                </div>
+                <span>Выберите маркетплейс, откуда планируете произвести импорт товаров/карточек товаров</span>
+                
+                <button onclick="openWildberriesLogin()">Войти в личный кабинет</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h2>Отлично остался последний шаг!</h2>
+                    <p>После успешного входа в личный кабинет, выберите один или несколько маркетплейсов для импорт. Далее нажмите кнопку импорт и ожидайте успешного переноса карточек товаров</p>
+                    <button class="hidden" id="login">Назад</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h2>Добро пожаловать!</h2>
+                    <p>С помощью приложения IMporto вы сможете быстро и легко перенести карточки своих товар с одного маркетплейса на другой!</p>
+                    <button class="hidden" id="register">Далее</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
