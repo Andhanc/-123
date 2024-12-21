@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Importo</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ffffff;
+            overflow: hidden;
+        }
+
+        .importo {
+            font-size: 5rem;
+            font-weight: bold;
+            color: #a100ff; /* Цвет как у иконки Wildberries */
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="importo">Importo</div>
+
+    <script>
+        setTimeout(() => {
+            window.location.href = "/index";  // Перенаправляем на Flask маршрут
+        }, 5000);
+    </script>
+</body>
+</html>
